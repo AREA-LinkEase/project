@@ -32,6 +32,14 @@ Le projet comprend également une version canary (version de test) et une versio
 - [Frontend](https://github.com/AREA-LinkEase/FrontEnd)
 - [Backend](https://github.com/AREA-LinkEase/BackEnd)
 
+## Comment Exécuter le Projet
+
+Pour exécuter le projet, utilisez Docker Compose.
+
+```bash
+docker-compose up
+```
+
 ## Status du Projet
 
 Le projet est actuellement en cours de développement.
