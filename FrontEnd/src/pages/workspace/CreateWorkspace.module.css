@@ -1,0 +1,41 @@
+.createWorkspaceBody {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.createWorkspaceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.createWorkspaceTitle {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.createWorkspaceInput {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.createWorkspaceInputWorkspace {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.createWorkspaceSeparationLine {
+    height: 1px;
+    width: 84%;
+    border-radius: 90px;
+    background-color: #B8B8B8;
+}
+
+.createWorkspaceList {
+    width: 100%;
+}

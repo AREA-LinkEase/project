@@ -1,0 +1,45 @@
+name: Build and Release APK
+
+on:
+  push:
+    tags:
+      - '*'
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Install Dependencies on Ubuntu
+        run: |
+          sudo apt-get update -y
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Docker
+        uses: actions/setup-docker@v2
+
+      - name: Build Docker image
+        run: docker build -t front-end .
+
+      - name: Run Docker container
+        run: docker run -d --name container front-end
+
+      - name: Create Release Directory
+        run: mkdir release
+
+      - name: Download apk
+        run: curl -s http://localhost:8081/client.apk -o release/client.apk
+
+      - name: Stop and remove Docker container
+        run: docker stop container && docker rm container
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: release/*
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

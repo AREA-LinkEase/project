@@ -1,0 +1,24 @@
+.workspaceBody {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.workspaceDescriptionContainer {
+    width: '100%';
+}
+
+.workspaceSwitch {
+    width: '100%';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.workspaceSeparationLine {
+    height: 0.5px;
+    width: 86%;
+    border-radius: 90px;
+    background-color: #C8C8C8;
+}
