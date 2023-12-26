@@ -1,0 +1,18 @@
+.commuAutomateBody {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.commuAutomateContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.commuAutomateList {
+    width: 100%;
+}

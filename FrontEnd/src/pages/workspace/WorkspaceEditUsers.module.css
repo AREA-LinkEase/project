@@ -1,0 +1,13 @@
+.workspaceEditUsersBody {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.workspaceEditUsersSeparationLine {
+    height: 1px;
+    width: 86%;
+    border-radius: 90px;
+    background-color: #C8C8C8;
+}
