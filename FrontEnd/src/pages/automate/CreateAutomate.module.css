@@ -1,0 +1,41 @@
+.createAutomateBody {
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.createAutomateContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.createAutomateTitle {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.createAutomateInput {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.createAutomateInputAutomate {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.createAutomateSeparationLine {
+    height: 1px;
+    width: 84%;
+    border-radius: 90px;
+    background-color: #B8B8B8;
+}
+
+.createAutomateList {
+    width: 100%;
+}
