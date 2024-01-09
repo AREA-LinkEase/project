@@ -1,0 +1,7 @@
+{
+  "name": "LinkEase",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

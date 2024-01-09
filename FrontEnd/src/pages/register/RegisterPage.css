@@ -1,0 +1,20 @@
+.registerPageBody {
+    padding-top: 10px;
+}
+
+.registerTitle {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.registerInput {
+    margin: 60px auto;
+    text-align: center;
+}
+
+.registerButton {
+    margin: 110px auto;
+    width: 100%;
+    text-align: center;
+}

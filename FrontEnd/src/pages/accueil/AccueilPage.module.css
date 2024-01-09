@@ -1,0 +1,23 @@
+.accueilBody {
+    background-color: 'white';
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.accueilH1Text {
+    padding-left: 30px;
+    padding-top: 35px;
+    padding-bottom: 70px;
+}
+
+.accueilPText {
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.accueilCenterDiv {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
