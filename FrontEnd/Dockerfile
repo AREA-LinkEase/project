@@ -7,10 +7,9 @@ COPY package*.json ./
 RUN npm install -g ionic
 RUN npm install
 COPY . .
-RUN rm -rf android
-RUN rm -rf build
-RUN npx cap add android
-RUN ionic build
+RUN rm -rf out
+RUN npm run build
+RUN npm run export
 RUN npx cap sync
 
 RUN apt update -qq && apt install -qq -y vim git unzip libglu1 libpulse-dev libasound2 libc6 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxi6  libxtst6 libnss3 wget
@@ -36,4 +35,4 @@ RUN ionic capacitor copy android && cd android && ./gradlew assembleDebug && cd 
 RUN mv ./android/app/build/outputs/apk/debug/app-debug.apk ./public
 RUN mv ./public/app-debug.apk ./public/client.apk
 EXPOSE 8081
-CMD ["npm", "start"]
+CMD ["npm", "run", "dev"]
