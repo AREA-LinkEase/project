@@ -136,8 +136,7 @@ export default function ChatAIComponent() {
               ChatAI <CustomChip sx={{ml: 2}} label='Bêta' skin='light' color='error' />
             </Typography>
             <Typography sx={{ mb: 6, color: 'text.secondary' }}>
-              According to us blisters are a very common thing and we come across them very often in our daily lives. It is
-              a very common occurrence like cold or fever depending upon your lifestyle.
+              Explore the power of conversational AI through our Chat AI feature, seamlessly integrated into LinkEase. Engage in intuitive conversations, leveraging natural language processing and cutting-edge technology. Our AI Chat not only enhances communication but also complements LinkEase's innovative ecosystem. It's a glimpse into the future of interaction, where the brilliance of technology converges with the simplicity of LinkEase's design.
             </Typography>
             <Button variant='contained' startIcon={<Icon icon='tabler:help' />} href={"/faq"}>FAQ</Button>
           </CardContent>
