@@ -1,67 +1,81 @@
 # Linkease
 
-## Description du Projet
+## Project Description
 
-Linkease est un projet visant à créer une plateforme de type IFTTT, mais avec une approche plus technique et axée sur la communauté. L'objectif est d'intégrer des éléments communautaires tels que le partage de workspaces (espaces de travail) et d'automates, ainsi que des forums pour poser des questions et offrir de l'aide aux utilisateurs, en particulier ceux moins à l'aise avec la programmation.
+Linkease is an innovative platform inspired by IFTTT (If This Then That), a web-based service that enables users to create chains of simple conditional statements, known as applets. These applets trigger actions in other web services and devices. For more information about IFTTT, visit their website.
 
-### Vocabulaire
+Linkease focuses on integrating and automating various services, particularly those compatible with OAuth 2.0 and webhooks. Users can easily add and manage these services on Linkease by filling out a form.
 
-- **Automate :** Un automate est similaire à une applet sur IFTTT, mais avec une complexité accrue. Il intègre des systèmes de variables et d'autres fonctionnalités avancées.
+### Features
 
-- **Workspace :** Un workspace est un espace partagé entre plusieurs utilisateurs, permettant le travail d'équipe. Il contient des automates créés par l'équipe.
+- **Service Creation:** Add OAuth 2.0 and webhook services to Linkease.
+- **Triggers and Actions:** Create triggers and actions within these services, similar to functions that can call each other. This process is supported by a special, no-code program akin to Blueprint or Scratch.
+- **Workspaces:** Organize automations into workspaces for group projects, allowing for the creation of no-code programs that utilize triggers and actions.
+- **Team Collaboration:** Invite others to collaborate in workspace and service management, fostering teamwork.
 
-## Structure Utilisateur
+### Community Approach
 
-![Structure Utilisateur](https://cdn.discordapp.com/attachments/906932555868143636/1181956197713182751/image.png?ex=658c2bfd&is=6579b6fd&hm=56dc4e4658c27e1ff247afc53c08b1e37eaf704b869988ad17eec3bc44d00a43&)
+Linkease aims to establish a community-focused IFTTT-like platform. Key community elements include sharing workspaces and automations, and forums for inquiries and assistance, especially for users less familiar with programming.
 
-## Structure Globale du Projet
+#### Terminology
 
-Le projet est composé d'un backend, d'un frontend et de workers.
+- **Automate:** Similar to an IFTTT applet but with increased complexity, including variable systems and advanced features.
+- **Workspace:** A shared space among users for team collaboration, containing automates created by the team.
 
-- **Backend :** Il s'agit d'une API qui communique avec le frontend et les workers. Elle gère les différentes fonctionnalités du système.
+### User Structure
 
-- **Frontend :** L'interface utilisateur qui permet aux utilisateurs de créer, partager et gérer leurs automates et workspaces.
+![User Structure](https://cdn.discordapp.com/attachments/906932555868143636/1181956197713182751/image.png)
 
-- **Workers :** Ces composants exécutent les automates. Ils peuvent être ajoutés dynamiquement au projet et communiquent avec l'API via des requêtes API et des sockets.
+### Global Project Structure
 
-Le projet comprend également une version canary (version de test) et une version stable.
+The project comprises a backend, a frontend, and workers:
 
-![Structure Globale du Projet](https://cdn.discordapp.com/attachments/906932555868143636/1181953622339227728/image.png?ex=658c2997&is=6579b497&hm=074d3f9843e2092357b71257875ec02100313f6141cd5e7ff2d65dddbc349806&)
+- **Backend:** An API that communicates with the frontend and workers, managing various system functionalities.
+- **Frontend:** The user interface allowing users to create, share, and manage their automates and workspaces.
+- **Workers:** Components that execute automates, dynamically added to the project and communicating with the API through API requests and sockets.
 
-### Liens Utiles
-- [Frontend](https://github.com/AREA-LinkEase/FrontEnd)
-- [Backend](https://github.com/AREA-LinkEase/BackEnd)
+The project also includes a canary (test) version and a stable version.
 
-## Comment Exécuter le Projet
+![Global Project Structure](https://cdn.discordapp.com/attachments/906932555868143636/1181953622339227728/image.png)
 
-Pour exécuter le projet, utilisez Docker Compose.
+### Useful Links
+- [Frontend Repository](https://github.com/AREA-LinkEase/FrontEnd)
+- [Backend Repository](https://github.com/AREA-LinkEase/BackEnd)
+- [Worker Repository](https://github.com/AREA-LinkEase/Worker)
+
+### How to Run the Project
+
+To run the project, use Docker Compose:
 
 ```bash
 docker-compose up
 ```
 
-## Status du Projet
+### Project Status
 
-Le projet est actuellement en cours de développement.
+The project is currently under development.
 
-![Roadmap](https://cdn.discordapp.com/attachments/906932555868143636/1181954266806636554/image.png?ex=658c2a30&is=6579b530&hm=75c9487601fff967d22cd6fd11d41e0b0d2273ba0490fe051ca293b83c54c5c6&)
+![Roadmap](https://cdn.discordapp.com/attachments/906932555868143636/1181954266806636554/image.png)
 
-## Contributeurs
+### Contributors
 
-- Younes Bahri (younes1.bahri@epitech.eu) - DevOps, Développeur Full-Stack
-- Simon Vermeulen (simon.vermeulen@epitech.eu) - Développeur Backend
-- Thomas Papaix (thomas.papaix@epitech.eu) - Développeur Frontend
-- Adil Nouiri (adil.nouiri@epitech.eu) - Développeur Frontend
-- Keziah Imer (keziah.imer@epitech.eu) - Développeur Backend
+- Younes Bahri (younes1.bahri@epitech.eu) - DevOps, Full-Stack Developer
+- Simon Vermeulen (simon.vermeulen@epitech.eu) - Backend Developer
+- Thomas Papaix (thomas.papaix@epitech.eu) - Frontend Developer
+- Adil Nouiri (adil.nouiri@epitech.eu) - Frontend Developer
+- Keziah Imer (keziah.imer@epitech.eu) - Backend Developer
 
-## Contact
+### Contact
 
-Pour toute question ou collaboration, veuillez contacter l'un des contributeurs mentionnés ci-dessus.
+For any questions or collaboration, please contact any of the contributors listed above.
 
-## License
+### License
 
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## Code de Conduite
+### Project Status
+Completed
 
-Veuillez consulter le fichier [CODE_OF_CONDUCT.md](lien_vers_code_of_conduct) pour connaître les directives de conduite à suivre lors de la participation à ce projet.
+### Code of Conduct
+
+Please refer to the [CODE_OF_CONDUCT.md](link_to_code_of_conduct) file for guidelines on participating in this project.
