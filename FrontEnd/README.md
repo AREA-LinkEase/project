@@ -1,88 +1,67 @@
-# LinkEase
+# Linkease
 
-## Description du Projet
+## Overview
+Linkease is an innovative automation platform inspired by IFTTT ("If This Then That"), a web-based service for creating conditional statements called applets. These applets enable actions across various web services and devices. Linkease specializes in integrating and automating services compatible with OAuth 2.0 and webhooks. 
 
-LinkEase est une application web offrant une expérience similaire à IFTTT (If This Then That), permettant aux utilisateurs de créer des automatisations simples en connectant différents services en ligne.
+For more information on IFTTT, visit their [website](https://ifttt.com).
 
 ## Captures d'écran (Exemples)
 
-![image 1](https://cdn.discordapp.com/attachments/906932555868143636/1186975755792551976/WorkSpaceActivate.png?ex=65953451&is=6582bf51&hm=1be4ea642a56463fa46240577fe54613e5690ddc9b9fed635101b6f0aa4ea7b4&)
-![image 2](https://media.discordapp.net/attachments/906932555868143636/1186975756115521576/AutomatPoc.png?ex=65953451&is=6582bf51&hm=a9516258d1c775166178610120c253d26fc4f146a0e4ecdce85209a1a09b39c2&=&format=webp&quality=lossless&width=256&height=554)
-![image 3](https://media.discordapp.net/attachments/906932555868143636/1186975756593664110/LogInPage.png?ex=65953451&is=6582bf51&hm=0b189f1b63ddd1cd4e7fcc6c28d668f9255a3d89804b98d18d6360a66b573e94&=&format=webp&quality=lossless&width=256&height=554)
+![image 1](https://cdn.discordapp.com/attachments/902556849776234557/1196523116411756555/image.png?ex=65b7effd&is=65a57afd&hm=b3e4548b32ce15cfb2ef1956ace492f2dcd8cf5f46f739c3e7b87418ff520563&)
+![image 2](https://cdn.discordapp.com/attachments/902556849776234557/1196523211198824539/image.png?ex=65b7f013&is=65a57b13&hm=fa24cff7b73900d13179ca41e63a7cc5dbf641c75870604c44c8405fc94eb830&)
+![image 3](https://cdn.discordapp.com/attachments/902556849776234557/1196523327926317136/image.png?ex=65b7f02f&is=65a57b2f&hm=0a91b175e20aaeb267fa55e9ef64cf7963377f5001793332757e5c9d11135801&)
 
-## Technologies Utilisées
+## Features
+- **Service Creation**: Add OAuth 2.0 and webhook services.
+- **Triggers and Actions**: Create and manage these within services, using a no-code program similar to Blueprint or Scratch.
+- **Workspaces**: Group automations and create no-code programs that utilize triggers and actions.
+- **Team Collaboration**: Collaborate by inviting team members to manage workspaces and services.
 
+## Technologies
+Linkease is built using the following technologies:
 - JavaScript
 - ReactJS
 - Ionic
+- CI/CD practices
+- NextJS
 
 ## Installation
-
 ### Via Dockerfile
-
-1. Assurez-vous d'avoir Docker installé sur votre machine.
-2. Clonez ce dépôt.
-3. Naviguez dans le répertoire du projet.
-4. Exécutez la commande suivante pour construire l'image Docker :
-
-```bash
-docker build -t linkease-app .
-```
-
-5. Une fois la construction terminée, lancez le conteneur avec la commande :
-
-```bash
-docker run -p 8081:8081 linkease-app
-```
-
-6. Accédez à l'application dans votre navigateur à l'adresse [http://localhost:8081](http://localhost:8081).
+1. Ensure Docker is installed.
+2. Clone the repository.
+3. Navigate to the project directory.
+4. Build the Docker image with `docker build -t linkease-app .`
+5. Run the container using `docker run -p 8081:8081 linkease-app`
+6. Access the application at `http://localhost:8081`
 
 ### Via npm start
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install dependencies with `npm install`
+4. Start the application using `npm start`
+5. Access the application at `http://localhost:8081`
 
-1. Clonez ce dépôt.
-2. Naviguez dans le répertoire du projet.
-3. Exécutez la commande suivante pour installer les dépendances :
-
-```bash
-npm install
-```
-
-4. Lancez l'application avec la commande :
-
-```bash
-npm start
-```
-
-5. Accédez à l'application dans votre navigateur à l'adresse [http://localhost:8081](http://localhost:8081).
-
-## Structure du Projet
-
-- **components:** Stocke les composants réutilisables.
-- **pages:** Stocke la logique des pages.
-- **models:** Sert à effectuer des requêtes API.
+## Project Structure
+- `components`: Reusable components.
+- `pages`: Page logic.
+- `models`: API request handling.
 
 ## Contribution
+Contribution guidelines can be found on the [contribution page](contributing.md).
 
-Vous pourrez trouver les informations nécessaire sur [ce page](contributing.md)
+## Contributors
+- Younes Bahri - DevOps, Front-End Developer
+- Thomas Papaix - Front-End Developer
+- Adil Nouiri - Front-End Developer
 
-## Contributeurs
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-- Younes Bahri - DevOps, Développeur Front-End
-- Thomas Papaix - Développeur Front-End
-- Adil Nouiri - Développeur Front-End
-
-## Licence
-
-Ce projet est sous licence MIT. Consultez le fichier [LICENSE](LICENSE) pour plus de détails.
-
-## Statut du Projet
-
-En Développement
+## Project Status
+Completed
 
 ## Contact
-
-Pour toute question ou contribution, veuillez contacter les membres de l'équipe dans l'ordre de priorité suivant :
-
-- Younes Bahri - [younes1.bahri@epitech.eu](mailto:younes1.bahri@epitech.eu)
-- Adil Nouiri - [adil.nouiri@epitech.eu](mailto:adil.nouiri@epitech.eu)
-- Thomas Papaix - [thomas.papaix@epitech.eu](mailto:thomas.papaix@epitech.eu)
+For questions or contributions, please contact the team members in the following order:
+- Younes Bahri - younes1.bahri@epitech.eu
+- Adil Nouiri - adil.nouiri@epitech.eu
+- Thomas Papaix - thomas.papaix@epitech.eu
