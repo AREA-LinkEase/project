@@ -64,7 +64,7 @@ export default function services() {
                     }
                     subtitle={
                         <Typography sx={{ color: 'text.secondary' }}>
-                            Petite description pour expliquer cette page.
+                          Discover powerful services tailored to elevate your workflow and streamline automation. Explore efficient data processing and seamless integrations with our Services page.
                         </Typography>
                     }
                 />

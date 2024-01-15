@@ -66,7 +66,7 @@ const Workspaces = () => {
           }
           subtitle={
             <Typography sx={{ color: 'text.secondary' }}>
-              Petite description pour expliquer cette page.
+              Unlock collaboration and efficiency with Workspaces. Organize your projects, share ideas, and boost productivity on our Workspaces page.
             </Typography>
           }
         />
