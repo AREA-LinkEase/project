@@ -24,7 +24,15 @@ Linkease aims to establish a community-focused IFTTT-like platform. Key communit
 
 ### User Structure
 
-![User Structure](https://cdn.discordapp.com/attachments/906932555868143636/1181956197713182751/image.png)
+```mermaid
+flowchart TD
+    U["User"] -->|creates| WS["Workspace<br/>shared space for a team"]
+    O["Invited users"] -->|collaborate on| WS
+    WS -->|contains| A["Automate<br/>no-code program, with variables"]
+    A -->|built from| TA["Triggers and Actions"]
+    TA -->|provided by| S["Service<br/>OAuth 2.0 or webhook"]
+    U -->|adds and manages| S
+```
 
 ### Global Project Structure
 
@@ -36,7 +44,16 @@ The project comprises a backend, a frontend, and workers:
 
 The project also includes a canary (test) version and a stable version.
 
-![Global Project Structure](https://cdn.discordapp.com/attachments/906932555868143636/1181953622339227728/image.png)
+```mermaid
+flowchart LR
+    FE["Frontend<br/>create, share and manage<br/>automates and workspaces"]
+    API["Backend API<br/>manages system functionalities"]
+    W1["Worker<br/>executes automates"]
+    W2["Worker<br/>added dynamically"]
+    FE <-->|API requests| API
+    API <-->|API requests and sockets| W1
+    API <-->|API requests and sockets| W2
+```
 
 ### Useful Links
 - [Frontend Repository](https://github.com/AREA-LinkEase/FrontEnd)
@@ -51,23 +68,17 @@ To run the project, use Docker Compose:
 docker-compose up
 ```
 
-### Project Status
-
-The project is currently under development.
-
-![Roadmap](https://cdn.discordapp.com/attachments/906932555868143636/1181954266806636554/image.png)
-
 ### Contributors
 
-- Younes Bahri (younes1.bahri@epitech.eu) - DevOps, Full-Stack Developer
-- Simon Vermeulen (simon.vermeulen@epitech.eu) - Backend Developer
-- Thomas Papaix (thomas.papaix@epitech.eu) - Frontend Developer
-- Adil Nouiri (adil.nouiri@epitech.eu) - Frontend Developer
-- Keziah Imer (keziah.imer@epitech.eu) - Backend Developer
+- Younes Bahri ([@bahmez](https://github.com/bahmez)) - DevOps, Full-Stack Developer
+- Simon Vermeulen ([@SimonVermeulen](https://github.com/SimonVermeulen)) - Backend Developer
+- Thomas Papaix ([@Thomaspapaix](https://github.com/Thomaspapaix)) - Frontend Developer
+- Adil Nouiri ([@AdilNouiri](https://github.com/AdilNouiri)) - Frontend Developer
+- Keziah Imer ([@KeziahImer](https://github.com/KeziahImer)) - Backend Developer
 
 ### Contact
 
-For any questions or collaboration, please contact any of the contributors listed above.
+For any questions or collaboration, please reach any of the contributors listed above through GitHub.
 
 ### License
 
@@ -78,4 +89,4 @@ Completed
 
 ### Code of Conduct
 
-Please refer to the [CODE_OF_CONDUCT.md](link_to_code_of_conduct) file for guidelines on participating in this project.
+Please refer to the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) file for guidelines on participating in this project.
